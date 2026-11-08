@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Menu — The Copper Bean</title>
+<meta name="description" content="Coffee, pour-overs, cold brew, tea, breakfast, brunch, pastries and desserts at The Copper Bean, Portland." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23B07A4A'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Georgia'%3EC%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+<div id="loader"><div class="loader-inner"><div class="loader-cup"><span>☕</span></div><div class="loader-name">The Copper Bean</div><div class="loader-bar"></div></div></div>
+
+<!-- HEADER -->
+<header class="site-header on-dark">
+  <nav class="nav container">
+    <a href="index.html" class="brand"><span class="brand-mark">C</span><span class="brand-text"><strong>Copper Bean</strong><small>Coffee&nbsp;·&nbsp;Roastery</small></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="btn btn-gold nav-cta">Find Us</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg"><img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=2000&q=80" alt="Coffee menu backdrop" /></div>
+  <div class="container">
+    <span class="eyebrow">What We Serve</span>
+    <h1>The Menu</h1>
+    <p>From single-origin espresso to slow-baked pastries — everything made to order, roasted and baked in-house.</p>
+    <div class="crumbs"><a href="index.html">Home</a> / Menu</div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section" id="menu-top">
+  <div class="container">
+
+    <!-- Primary category tabs -->
+    <div class="menu-tabs reveal">
+      <button class="menu-tab active" data-target="cat-coffee">☕ Coffee</button>
+      <button class="menu-tab" data-target="cat-tea">🍵 Tea &amp; More</button>
+      <button class="menu-tab" data-target="cat-breakfast">🍳 Breakfast &amp; Brunch</button>
+      <button class="menu-tab" data-target="cat-bakery">🥐 Bakery</button>
+      <button class="menu-tab" data-target="cat-desserts">🍰 Desserts</button>
+    </div>
+
+    <!-- ============ COFFEE ============ -->
+    <div class="menu-panel active" id="cat-coffee">
+      <div class="menu-feature reveal">
+        <figure class="mf-card"><img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80" alt="Cold brew" loading="lazy" />
+          <figcaption class="mf-cap"><span class="f-tag">On Tap</span><h3>Nitro Cold Brew</h3><p>Cascading, creamy, zero dairy.</p><span class="price">$5.75</span></figcaption></figure>
+        <figure class="mf-card"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80" alt="Pour over" loading="lazy" />
+          <figcaption class="mf-cap"><span class="f-tag">Hand-Brewed</span><h3>V60 Pour-Over</h3><p>Rotating single origins.</p><span class="price">$6.00</span></figcaption></figure>
+        <figure class="mf-card"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Signature latte" loading="lazy" />
+          <figcaption class="mf-cap"><span class="f-tag">Signature</span><h3>Copper Maple Latte</h3><p>Smoked maple &amp; cinnamon.</p><span class="price">$5.75</span></figcaption></figure>
+      </div>
+
+      <!-- sub-tabs -->
+      <div class="menu-sub-tabs reveal">
+        <button class="sub-tab active" data-group-target="espresso">Espresso Bar</button>
+        <button class="sub-tab" data-group-target="pourover">Pour-Over &amp; Filter</button>
+        <button class="sub-tab" data-group-target="cold">Cold &amp; Iced</button>
+        <button class="sub-tab" data-group-target="signature">Signature Lattes</button>
+      </div>
+
+      <div class="menu-group active" data-group-id="espresso">
+        <div class="menu-list reveal">
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Espresso</span><div class="mi-desc">A clean double shot of our house blend, The Hawthorn Dark.</div></div><span class="mi-dots"></span><span class="mi-price">$3.25</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Macchiato</span><div class="mi-desc">Double espresso marked with a dollop of milk foam.</div></div><span class="mi-dots"></span><span class="mi-price">$3.75</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Cortado</span><div class="mi-desc">Equal parts espresso and warm micro-foamed milk.</div></div><span class="mi-dots"></span><span class="mi-price">$4.25</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Flat White</span><span class="mi-badge">Popular</span><div class="mi-desc">Ristretto shots under silky, paper-thin microfoam.</div></div><span class="mi-dots"></span><span class="mi-price">$4.75</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Cappuccino</span><div class="mi-desc">Espresso, steamed milk and a generous crown of foam.</div></div><span class="mi-dots"></span><span class="mi-price">$4.75</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Caffè Latte</span><div class="mi-desc">Our most-ordered — smooth espresso, steamed whole milk.</div></div><span class="mi-dots"></span><span class="mi-price">$5.00</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Mocha</span><div class="mi-desc">70% dark Guatemalan chocolate, espresso, steamed milk.</div></div><span class="mi-dots"></span><span class="mi-price">$5.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Americano</span><div class="mi-desc">Double shot lengthened with hot water. Long or short.</div></div><span class="mi-dots"></span><span class="mi-price">$3.75</span></div>
+        </div>
+      </div>
+
+      <div class="menu-group" data-group-id="pourover">
+        <div class="menu-list reveal">
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Ethiopia Yirgacheffe</span><span class="mi-badge">Rotating</span><div class="mi-desc">Jasmine, bergamot, stone fruit. Floral and bright.</div></div><span class="mi-dots"></span><span class="mi-price">$6.00</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Colombia Huila</span><div class="mi-desc">Red apple, brown sugar, milk chocolate. Rounded, sweet.</div></div><span class="mi-dots"></span><span class="mi-price">$5.75</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Guatemala Antigua</span><div class="mi-desc">Cocoa, toasted almond, a whisper of orange zest.</div></div><span class="mi-dots"></span><span class="mi-price">$5.75</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Chemex (for two)</span><div class="mi-desc">A full 600ml carafe, brewed tableside. Serves two cups.</div></div><span class="mi-dots"></span><span class="mi-price">$11.00</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">House Filter / Batch Brew</span><div class="mi-desc">Freshly brewed, free refills before noon.</div></div><span class="mi-dots"></span><span class="mi-price">$3.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">AeroPress</span><div class="mi-desc">Clean, full-bodied cup pressed to order.</div></div><span class="mi-dots"></span><span class="mi-price">$5.25</span></div>
+        </div>
+      </div>
+
+      <div class="menu-group" data-group-id="cold">
+        <div class="menu-list reveal">
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Midnight Cold Brew</span><span class="mi-badge">24-hr Steep</span><div class="mi-desc">Over hand-cut ice with a whisper of Madagascar vanilla.</div></div><span class="mi-dots"></span><span class="mi-price">$5.25</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Nitro Cold Brew</span><div class="mi-desc">Nitrogen-infused, cascading and velvet-smooth. On tap.</div></div><span class="mi-dots"></span><span class="mi-price">$5.75</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Iced Latte</span><div class="mi-desc">Double shot, cold milk, tall glass of ice.</div></div><span class="mi-dots"></span><span class="mi-price">$5.25</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Espresso Tonic</span><span class="mi-badge">Refreshing</span><div class="mi-desc">Shots over tonic, ice and a wheel of orange. Fizzy, bright.</div></div><span class="mi-dots"></span><span class="mi-price">$5.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Iced Shakerato</span><div class="mi-desc">Espresso hand-shaken with ice to a silky foam.</div></div><span class="mi-dots"></span><span class="mi-price">$5.00</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Affogato</span><div class="mi-desc">Vanilla bean gelato drowned in a hot double shot.</div></div><span class="mi-dots"></span><span class="mi-price">$6.00</span></div>
+        </div>
+      </div>
+
+      <div class="menu-group" data-group-id="signature">
+        <div class="menu-list reveal">
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Copper Maple Latte</span><span class="mi-badge">House</span><div class="mi-desc">Smoked maple, cinnamon bark, double shot. Hot or iced.</div></div><span class="mi-dots"></span><span class="mi-price">$5.75</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Honey Lavender Latte</span><div class="mi-desc">Local wildflower honey and a hint of culinary lavender.</div></div><span class="mi-dots"></span><span class="mi-price">$5.75</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Brown-Sugar Oat Shaken</span><div class="mi-desc">Shaken espresso, brown sugar, oat milk, cinnamon.</div></div><span class="mi-dots"></span><span class="mi-price">$5.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Spiced Cardamom Latte</span><div class="mi-desc">House-ground cardamom, nutmeg and a touch of vanilla.</div></div><span class="mi-dots"></span><span class="mi-price">$5.75</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Toasted Coconut Mocha</span><div class="mi-desc">Dark chocolate, coconut, espresso, torched marshmallow.</div></div><span class="mi-dots"></span><span class="mi-price">$6.25</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Salted Caramel Cortado</span><div class="mi-desc">House salted caramel folded through a classic cortado.</div></div><span class="mi-dots"></span><span class="mi-price">$5.25</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ TEA & MORE ============ -->
+    <div class="menu-panel" id="cat-tea">
+      <div class="menu-feature reveal">
+        <figure class="mf-card"><img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=800&q=80" alt="Matcha latte" loading="lazy" />
+          <figcaption class="mf-cap"><span class="f-tag">Ceremonial</span><h3>Uji Matcha Latte</h3><p>Stone-ground, whisked to a cloud.</p><span class="price">$5.50</span></figcaption></figure>
+        <figure class="mf-card"><img src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?auto=format&fit=crop&w=800&q=80" alt="Chai latte" loading="lazy" />
+          <figcaption class="mf-cap"><span class="f-tag">House Blend</span><h3>Masala Chai</h3><p>Nine spices, steeped fresh.</p><span class="price">$5.00</span></figcaption></figure>
+        <figure class="mf-card"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80" alt="Loose leaf tea" loading="lazy" />
+          <figcaption class="mf-cap"><span class="f-tag">Loose Leaf</span><h3>Single-Estate Teas</h3><p>Steeped by the pot.</p><span class="price">$4.50</span></figcaption></figure>
+      </div>
+
+      <div class="menu-sub-tabs reveal">
+        <button class="sub-tab active" data-group-target="tea-leaf">Loose-Leaf Tea</button>
+        <button class="sub-tab" data-group-target="tea-latte">Matcha &amp; Chai</button>
+        <button class="sub-tab" data-group-target="tea-other">Hot Chocolate &amp; More</button>
+      </div>
+
+      <div class="menu-group active" data-group-id="tea-leaf">
+        <div class="menu-list reveal">
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">English Breakfast</span><div class="mi-desc">Bold Assam &amp; Ceylon blend. Takes milk beautifully.</div></div><span class="mi-dots"></span><span class="mi-price">$4.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Earl Grey Supreme</span><div class="mi-desc">Black tea, bergamot oil, blue cornflower.</div></div><span class="mi-dots"></span><span class="mi-price">$4.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Jasmine Silver Needle</span><div class="mi-desc">Delicate white tea scented with fresh jasmine.</div></div><span class="mi-dots"></span><span class="mi-price">$5.25</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Peppermint</span><span class="mi-badge">Caffeine-Free</span><div class="mi-desc">Pure whole-leaf peppermint. Clean and cooling.</div></div><span class="mi-dots"></span><span class="mi-price">$4.25</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Chamomile &amp; Honey</span><span class="mi-badge">Caffeine-Free</span><div class="mi-desc">Egyptian chamomile with a drizzle of local honey.</div></div><span class="mi-dots"></span><span class="mi-price">$4.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Dragonwell Green</span><div class="mi-desc">Pan-fired Longjing — nutty, smooth, grassy-sweet.</div></div><span class="mi-dots"></span><span class="mi-price">$4.75</span></div>
+        </div>
+      </div>
+
+      <div class="menu-group" data-group-id="tea-latte">
+        <div class="menu-list reveal">
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Ceremonial Matcha Latte</span><span class="mi-badge">Popular</span><div class="mi-desc">Uji matcha, whisked and layered over milk. Hot or iced.</div></div><span class="mi-dots"></span><span class="mi-price">$5.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Iced Strawberry Matcha</span><div class="mi-desc">Crushed strawberry, oat milk, ceremonial matcha.</div></div><span class="mi-dots"></span><span class="mi-price">$6.00</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Masala Chai Latte</span><div class="mi-desc">Our nine-spice chai simmered with steamed milk.</div></div><span class="mi-dots"></span><span class="mi-price">$5.00</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Dirty Chai</span><div class="mi-desc">Masala chai with an added shot of espresso.</div></div><span class="mi-dots"></span><span class="mi-price">$5.75</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">London Fog</span><div class="mi-desc">Earl Grey, steamed milk, vanilla. Soft and fragrant.</div></div><span class="mi-dots"></span><span class="mi-price">$5.00</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Golden Turmeric Latte</span><div class="mi-desc">Turmeric, ginger, black pepper, honey, oat milk.</div></div><span class="mi-dots"></span><span class="mi-price">$5.25</span></div>
+        </div>
+      </div>
+
+      <div class="menu-group" data-group-id="tea-other">
+        <div class="menu-list reveal">
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Dark Hot Chocolate</span><span class="mi-badge">Rich</span><div class="mi-desc">70% Guatemalan chocolate melted into steamed milk.</div></div><span class="mi-dots"></span><span class="mi-price">$5.00</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">White Peppermint Cocoa</span><div class="mi-desc">White chocolate and peppermint. A seasonal favourite.</div></div><span class="mi-dots"></span><span class="mi-price">$5.25</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Babyccino</span><span class="mi-badge">For Kids</span><div class="mi-desc">Just the foam, with a dusting of cocoa. On the house smile.</div></div><span class="mi-dots"></span><span class="mi-price">$2.00</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Fresh Orange Juice</span><div class="mi-desc">Cold-pressed each morning. Nothing added.</div></div><span class="mi-dots"></span><span class="mi-price">$4.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Sparkling Elderflower</span><div class="mi-desc">House elderflower cordial over soda and lime.</div></div><span class="mi-dots"></span><span class="mi-price">$4.25</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Still / Sparkling Water</span><div class="mi-desc">Local spring water, by the bottle.</div></div><span class="mi-dots"></span><span class="mi-price">$2.50</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ BREAKFAST & BRUNCH ============ -->
+    <div class="menu-panel" id="cat-breakfast">
+      <div class="menu-feature reveal">
+        <figure class="mf-card"><img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80" alt="Avocado toast" loading="lazy" />
+          <figcaption class="mf-cap"><span class="f-tag">All-Day</span><h3>Smashed Avocado</h3><p>Chili crunch &amp; poached egg.</p><span class="price">$11.50</span></figcaption></figure>
+        <figure class="mf-card"><img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80" alt="French toast" loading="lazy" />
+          <figcaption class="mf-cap"><span class="f-tag">Weekend</span><h3>Brioche French Toast</h3><p>Maple, berries, mascarpone.</p><span class="price">$13.00</span></figcaption></figure>
+        <figure class="mf-card"><img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80" alt="Breakfast bowl" loading="lazy" />
+          <figcaption class="mf-cap"><span class="f-tag">Healthy</span><h3>Açaí Bowl</h3><p>Granola, banana, honey.</p><span class="price">$10.50</span></figcaption></figure>
+      </div>
+
+      <div class="menu-sub-tabs reveal">
+        <button class="sub-tab active" data-group-target="bk-morning">Morning</button>
+        <button class="sub-tab" data-group-target="bk-brunch">Brunch &amp; All-Day</button>
+        <button class="sub-tab" data-group-target="bk-light">Light &amp; Healthy</button>
+      </div>
+
+      <div class="menu-group active" data-group-id="bk-morning">
+        <div class="menu-list reveal">
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Butter &amp; Jam Croissant Plate</span><div class="mi-desc">Warm croissant, cultured butter, house berry jam.</div></div><span class="mi-dots"></span><span class="mi-price">$6.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Steel-Cut Oats</span><div class="mi-desc">Slow-cooked oats, roasted pear, toasted hazelnut, honey.</div></div><span class="mi-dots"></span><span class="mi-price">$8.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Bacon &amp; Egg Roll</span><span class="mi-badge">Popular</span><div class="mi-desc">Milk bun, maple bacon, fried egg, smoky aioli.</div></div><span class="mi-dots"></span><span class="mi-price">$9.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Breakfast Burrito</span><div class="mi-desc">Scrambled egg, black beans, cheddar, salsa roja.</div></div><span class="mi-dots"></span><span class="mi-price">$10.00</span></div>
+        </div>
+      </div>
+
+      <div class="menu-group" data-group-id="bk-brunch">
+        <div class="menu-list reveal">
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Smashed Avocado Toast</span><span class="mi-badge">Veg</span><div class="mi-desc">Sourdough, charred lemon, chili crunch, poached egg.</div></div><span class="mi-dots"></span><span class="mi-price">$11.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Brioche French Toast</span><span class="mi-badge">Weekend</span><div class="mi-desc">Vanilla-soaked brioche, maple, berries, mascarpone.</div></div><span class="mi-dots"></span><span class="mi-price">$13.00</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Shakshuka</span><div class="mi-desc">Eggs baked in spiced tomato, feta, warm flatbread.</div></div><span class="mi-dots"></span><span class="mi-price">$12.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Croque Madame</span><div class="mi-desc">Grilled ham &amp; gruyère, béchamel, fried egg on top.</div></div><span class="mi-dots"></span><span class="mi-price">$13.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Buttermilk Pancakes</span><div class="mi-desc">Stack of three, whipped butter, warm maple syrup.</div></div><span class="mi-dots"></span><span class="mi-price">$11.00</span></div>
+        </div>
+      </div>
+
+      <div class="menu-group" data-group-id="bk-light">
+        <div class="menu-list reveal">
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Açaí Bowl</span><span class="mi-badge">Vegan</span><div class="mi-desc">Açaí blend, house granola, banana, berries, honey drizzle.</div></div><span class="mi-dots"></span><span class="mi-price">$10.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Greek Yoghurt Parfait</span><div class="mi-desc">Layered with granola, stewed rhubarb and toasted seeds.</div></div><span class="mi-dots"></span><span class="mi-price">$8.00</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Chia Pudding</span><span class="mi-badge">Vegan</span><div class="mi-desc">Coconut chia, mango, passionfruit, toasted coconut.</div></div><span class="mi-dots"></span><span class="mi-price">$7.50</span></div>
+          <div class="menu-item"><div class="mi-main"><span class="mi-name">Seasonal Fruit Plate</span><div class="mi-desc">Whatever's ripe at the market this week.</div></div><span class="mi-dots"></span><span class="mi-price">$6.50</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ BAKERY ============ -->
+    <div class="menu-panel" id="cat-bakery">
+      <div class="menu-feature reveal">
+        <figure class="mf-card"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Croissant" loading="lazy" />
+          <figcaption class="mf-cap"><span class="f-tag">Signature</span><h3>Brown-Butter Croissant</h3><p>Three-day lamination.</p><span class="price">$4.50</span></figcaption></figure>
+        <figure class="mf-card"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Sourdough" loading="lazy" />
+          <figcaption class="mf-cap"><span class="f-tag">Baked Daily</span><h3>Sourdough Loaf</h3><p>48-hour wild ferment.</p><span class="price">$8.00</span></figcaption></figure>
+        <figure class="mf-card"><img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=800&q=80" alt="Cinnamon roll" loading="lazy" />
+          <figcaption class="mf-cap"><span class="f-tag">Warm</span><h3>Cardamom Bun</h3><p>Scandinavian-style, pearl sugar.</p><span class="price">$5.00</span></figcaption></figure>
+      </div>
+      <p class="menu-note reveal">Everything below is baked fresh on-site each morning. When it's gone, it's gone.</p>
+      <div class="menu-list reveal">
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Plain Butter Croissant</span><div class="mi-desc">All butter, laminated over three days, shatter-crisp.</div></div><span class="mi-dots"></span><span class="mi-price">$3.75</span></div>
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Brown-Butter Almond Croissant</span><span class="mi-badge">Signature</span><div class="mi-desc">Filled with toasted almond frangipane, flaked almonds.</div></div><span class="mi-dots"></span><span class="mi-price">$4.50</span></div>
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Pain au Chocolat</span><div class="mi-desc">Two batons of dark Valrhona chocolate inside.</div></div><span class="mi-dots"></span><span class="mi-price">$4.25</span></div>
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Cardamom Bun</span><span class="mi-badge">Warm</span><div class="mi-desc">Scandinavian-style, twisted, crowned with pearl sugar.</div></div><span class="mi-dots"></span><span class="mi-price">$5.00</span></div>
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Morning Bun</span><div class="mi-desc">Croissant dough, orange zest, cinnamon sugar crust.</div></div><span class="mi-dots"></span><span class="mi-price">$4.75</span></div>
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Blueberry Scone</span><div class="mi-desc">Buttermilk scone studded with wild blueberries.</div></div><span class="mi-dots"></span><span class="mi-price">$4.00</span></div>
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Banana Walnut Bread</span><div class="mi-desc">Thick slice, toasted on request, with cultured butter.</div></div><span class="mi-dots"></span><span class="mi-price">$4.50</span></div>
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Everything Bagel</span><div class="mi-desc">Hand-rolled, boiled &amp; baked. With whipped cream cheese.</div></div><span class="mi-dots"></span><span class="mi-price">$5.50</span></div>
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Sourdough Loaf</span><div class="mi-desc">48-hour wild ferment. Whole, to take home.</div></div><span class="mi-dots"></span><span class="mi-price">$8.00</span></div>
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Focaccia Slab</span><span class="mi-badge">Vegan</span><div class="mi-desc">Rosemary &amp; sea salt, olive oil, airy crumb.</div></div><span class="mi-dots"></span><span class="mi-price">$4.50</span></div>
+      </div>
+    </div>
+
+    <!-- ============ DESSERTS ============ -->
+    <div class="menu-panel" id="cat-desserts">
+      <div class="menu-feature reveal">
+        <figure class="mf-card"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Cake slice" loading="lazy" />
+          <figcaption class="mf-cap"><span class="f-tag">House-Made</span><h3>Basque Cheesecake</h3><p>Burnt-top, custard centre.</p><span class="price">$7.50</span></figcaption></figure>
+        <figure class="mf-card"><img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80" alt="Tiramisu" loading="lazy" />
+          <figcaption class="mf-cap"><span class="f-tag">Classic</span><h3>Espresso Tiramisu</h3><p>Our own espresso, mascarpone.</p><span class="price">$7.00</span></figcaption></figure>
+        <figure class="mf-card"><img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=800&q=80" alt="Cookies" loading="lazy" />
+          <figcaption class="mf-cap"><span class="f-tag">Warm</span><h3>Brown-Butter Cookie</h3><p>Sea-salt &amp; dark chocolate.</p><span class="price">$3.50</span></figcaption></figure>
+      </div>
+      <div class="menu-list reveal">
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Burnt Basque Cheesecake</span><span class="mi-badge">Popular</span><div class="mi-desc">Caramelised top, impossibly creamy centre. Per slice.</div></div><span class="mi-dots"></span><span class="mi-price">$7.50</span></div>
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Espresso Tiramisu</span><div class="mi-desc">Ladyfingers soaked in our own espresso, mascarpone cream.</div></div><span class="mi-dots"></span><span class="mi-price">$7.00</span></div>
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Flourless Chocolate Torte</span><span class="mi-badge">GF</span><div class="mi-desc">Dense 70% dark chocolate, crème fraîche, cocoa nib.</div></div><span class="mi-dots"></span><span class="mi-price">$7.50</span></div>
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Lemon &amp; Olive Oil Cake</span><div class="mi-desc">Moist, bright, with a candied lemon glaze. Per slice.</div></div><span class="mi-dots"></span><span class="mi-price">$6.50</span></div>
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Brown-Butter Choc-Chip Cookie</span><span class="mi-badge">Warm</span><div class="mi-desc">Flaky sea salt and pools of dark chocolate. Served warm.</div></div><span class="mi-dots"></span><span class="mi-price">$3.50</span></div>
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Pistachio Financier</span><div class="mi-desc">Little brown-butter cakes, ground pistachio, honey.</div></div><span class="mi-dots"></span><span class="mi-price">$4.00</span></div>
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Affogato</span><div class="mi-desc">Vanilla gelato, hot espresso poured over at the table.</div></div><span class="mi-dots"></span><span class="mi-price">$6.00</span></div>
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">Seasonal Gelato</span><div class="mi-desc">Two scoops. Ask for today's small-batch flavours.</div></div><span class="mi-dots"></span><span class="mi-price">$5.50</span></div>
+      </div>
+    </div>
+
+    <p class="menu-note reveal">Oat, almond, soy &amp; lactose-free milks available on any drink at no extra charge · Please tell us about allergies — most items can be adapted · Prices in USD.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="cta-band reveal">
+      <h2>Come sit a while</h2>
+      <p>We don't take reservations — just walk in, find a seat, and let us look after the rest.</p>
+      <a href="contact.html" class="btn btn-gold">Find &amp; Visit Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand"><span class="brand-mark">C</span><span class="brand-text"><strong>Copper Bean</strong><small>Coffee&nbsp;·&nbsp;Roastery</small></span></div>
+        <p>A specialty coffee house &amp; micro-roastery in Portland's Hawthorn District. Roasting small, pouring slow since 2016.</p>
+        <div class="social">
+          <a href="https://instagram.com/copperbean.co" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://facebook.com/thecopperbean" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3l.5-3H14V4.5c0-.9.3-1.5 1.6-1.5H17V.2C16.7.1 15.6 0 14.4 0 11.9 0 10 1.5 10 4.2V6H7v3h3v9h4z"/></svg></a>
+          <a href="https://x.com/copperbean" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h3l-7.5 8.6L22 22h-6.2l-4.9-6.4L5.3 22H2.2l8-9.1L2 2h6.3l4.4 5.8zm-1 18h1.7L7 3.9H5.2z"/></svg></a>
+          <a href="https://tiktok.com/@copperbean.co" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 2c.3 2.3 1.9 4.1 4 4.4v3c-1.5 0-2.9-.5-4-1.3V15a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3V2z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Explore</h4><ul>
+        <li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Visit</h4><ul class="footer-contact">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>142 Marlowe Street, Hawthorn District, Portland, OR 97204</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg><a href="tel:+15035550192">+1 (503) 555-0192</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg><a href="mailto:hello@copperbean.co">hello@copperbean.co</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Hours</h4><div class="footer-hours">
+        <div><span>Mon – Thu</span><span>7:00 – 20:00</span></div>
+        <div><span>Friday</span><span>7:00 – 22:00</span></div>
+        <div><span>Saturday</span><span>8:00 – 22:00</span></div>
+        <div><span>Sunday</span><span>8:00 – 19:00</span></div>
+      </div></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> The Copper Bean Coffee Co. All rights reserved.</span>
+      <span>Crafted with care in Portland, OR · Demo site</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
