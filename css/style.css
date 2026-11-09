@@ -129,14 +129,22 @@ p  { color: var(--ink-soft); }
 .site-header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 900;
   padding: 18px 0;
-  transition: background .4s var(--ease), padding .4s var(--ease), box-shadow .4s;
+  transition: padding .4s var(--ease);
 }
-.site-header.scrolled {
+/* Blur + background live on a pseudo-element, NOT on the header itself.
+   Putting backdrop-filter on the header would make it the containing block
+   for the fixed mobile menu, clipping the slide-out panel to the header's
+   height once the page is scrolled. The pseudo-element avoids that. */
+.site-header::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
   background: rgba(248,242,233,.88);
+  -webkit-backdrop-filter: saturate(140%) blur(14px);
   backdrop-filter: saturate(140%) blur(14px);
   box-shadow: 0 1px 0 rgba(43,30,21,.07);
-  padding: 12px 0;
+  opacity: 0; transition: opacity .4s var(--ease);
 }
+.site-header.scrolled::before { opacity: 1; }
+.site-header.scrolled { padding: 12px 0; }
 .nav { display: flex; align-items: center; justify-content: space-between; }
 .brand { display: flex; align-items: center; gap: 12px; }
 .brand-mark {
